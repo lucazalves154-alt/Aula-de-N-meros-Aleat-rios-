@@ -4,24 +4,25 @@ public class Main {
 
         Random random = new Random();
 
-      int [] vetor = new int [11];
+        int[] vetor = new int[11];
 
 
-      // Preencher o vetor com numero aleatorios
-      for (int i = 0; i < vetor.length; i++ ){
-          vetor[i] = random.nextInt(100);
-          System.out.println(" Posição " + i + " : " +  vetor[i]);
-      }
+        // Preencher o vetor com numero aleatorios
+        for (int i = 0; i < vetor.length; i++) {
+            vetor[i] = random.nextInt(100);
+            System.out.println(" Posição " + i + " : " + vetor[i]);
+        }
 
-      //Assumir p primeiro com menor
-      int menor = vetor[0];
+        //Assumir p primeiro com menor
+        int menor = vetor[0];
 
-      // Percorrer vetor
-      for(int i = 1; i < vetor.length; i++){
-          if( vetor[i] < menor ){
-              menor = vetor[i];
-          }
-      }
-        System.out.println(" Menor elemento " + menor);
+        // Percorrer vetor
+        for (int i = 1; i < vetor.length; i++) {
+            if (vetor[i] < menor) {
+                menor = vetor[i];
+            }
+        }
+        System.out.println(" Menor Numero : " + menor);
 
-
+    }
+}
